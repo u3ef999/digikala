@@ -1645,6 +1645,33 @@
             return direction;
         }
     </script>
+
+ <script>
+        document.addEventListener("keydown", function (e) {
+            if (e.ctrlKey && e.key === "u") {
+                e.preventDefault();
+            }
+        });
+    </script>
+ <script>
+        document.addEventListener("keydown", function (e) {
+      
+            if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+                e.preventDefault();
+       
+            }
+        });
+
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    
+    
 </body>
 
 </html>
