@@ -1646,49 +1646,31 @@
         }
     </script>
 
- <script>
-        document.addEventListener("keydown", function (e) {
-            if (e.ctrlKey && e.key === "u") {
-                e.preventDefault();
-            }
-        });
-    </script>
- <script>
-        document.addEventListener("keydown", function (e) {
-      
-            if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
-                e.preventDefault();
-       
-            }
-        });
-
-
-        document.addEventListener("keydown", function (e) {
-            if (e.key === "F12") {
-                e.preventDefault();
-            }
-        });
-    </script>
-
-     <script>
-        // غیرفعال کردن راست‌کلیک
+<script>
+     
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
-            alert("راست‌کلیک غیرفعال شده است.");
+       
         });
 
-        // غیرفعال کردن Ctrl+U و F12
+      
         document.addEventListener("keydown", function (e) {
-            // جلوگیری از Ctrl + U
-            if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+           
+            if (e.ctrlKey && e.key.toLowerCase() === "u") {
                 e.preventDefault();
-                alert("مشاهده سورس کد غیرفعال شده است.");
+          
             }
 
-            // جلوگیری از F12
+   
             if (e.key === "F12") {
                 e.preventDefault();
-                alert("استفاده از ابزارهای توسعه‌دهنده غیرفعال شده است.");
+           
+            }
+
+      
+            if (e.ctrlKey && (e.key === "ع" || e.key === "ي")) {
+                e.preventDefault();
+        
             }
         });
     </script>
